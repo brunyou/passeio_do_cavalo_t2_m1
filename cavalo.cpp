@@ -15,8 +15,10 @@ for (int i; i < 8; i++){
     }
 }
  // criando a função de movimento do cavalo recebendo a posição por parâmtro
- void mv_cavalo(int pos_l, int pos_c){
+ int mv_cavalo(int pos_l, int pos_c){
+    
 
+    return int ult_pos;
  }
 
 return 0;
