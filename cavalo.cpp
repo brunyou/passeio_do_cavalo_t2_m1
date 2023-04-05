@@ -15,11 +15,16 @@ for (int i; i < 8; i++){
     }
 }
  // criando a função de movimento do cavalo recebendo a posição por parâmtro
- int mv_cavalo(int pos_l, int pos_c){
-    
-
-    return int ult_pos;
- }
-
+ // recebe a posição da linha, coluna, uma string de direção e o número de movimento
+  mv_cavalo(int pos_l, int pos_c, string dir, num_mv){
+    if (dir == cima_d && tabuleiro[pos_l - 2][pos_c + 1] == 0){
+        tabuleiro[pos_l + 1][pos_c - 2] = num_mv;
+    }
+    else if (dir == cima_e && tabuleiro[pos_l - 2][pos_c - 1] == 0){
+        tabuleiro[pos_l - 1][pos_c - 2] = num_mv;
+    }
+     else if (dir == dir_c && tabuleiro[pos_l - 1][pos_c - 1] == 0){
+        tabuleiro[pos_l - 1][pos_c - 2] = num_mv;
+    }
 return 0;
 }
